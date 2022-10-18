@@ -1,0 +1,38 @@
+/* Write your code here. */
+.eachFaqItem {
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  padding: 30px;
+  display: flex;
+  flex-direction: Column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+.ques {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.nameTxt-container {
+  width: 100%;
+}
+.bb {
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent;
+}
+.h {
+  width: 100%;
+}
+.hh {
+  display: none;
+}
+.paraQuestion {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'roboto';
+  color: #52606d;
+}

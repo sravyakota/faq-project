@@ -1,0 +1,28 @@
+/* Write your code here. */
+.faqs-bg-container {
+  background-color: #9aa5b1;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.faqs-container {
+  background-color: #f1f5f8;
+  height: 120vh;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  outline: none;
+  padding: 30px;
+}
+.heading {
+  color: #cb8805;
+  font-size: 40px;
+  font-family: 'roboto';
+  font-weight: bold;
+}
