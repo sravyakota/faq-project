@@ -6,20 +6,23 @@ class FaqItem extends Component {
   state = {isActive: false}
 
   onPlusOrMinus = () => {
+    console.log('clicked')
     this.setState(prevState => ({isActive: !prevState.isActive}))
   }
 
   render() {
     const {isActive} = this.state
     const {eachItem} = this.props
-    const {answerText, questionText} = eachItem
+    const {answerText, questionText, id} = eachItem
     console.log(isActive)
+    console.log(answerText)
+    console.log(id)
 
     const img = isActive
       ? 'https://assets.ccbp.in/frontend/react-js/faqs-minus-icon-img.png'
       : 'https://assets.ccbp.in/frontend/react-js/faqs-plus-icon-img.png'
 
-    const text = isActive ? {answerText} : ''
+    const para = isActive ? answerText : null
     const hr = isActive ? 'h' : 'hh'
     const altText = isActive ? 'minus' : 'plus'
 
@@ -31,10 +34,12 @@ class FaqItem extends Component {
             <img src={img} alt={altText} className="icons" />
           </button>
         </div>
-        <div className="nameTxt-container">
+        <hr className={hr} />
+        <p>{para}</p>
+        {/* <div className="nameTxt-container">
           <hr className={hr} />
-          <p>{text}</p>
-        </div>
+          <p>{para}</p>
+        </div> */}
       </li>
     )
   }
