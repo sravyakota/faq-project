@@ -10,6 +10,22 @@ class FaqItem extends Component {
     this.setState(prevState => ({isActive: !prevState.isActive}))
   }
 
+  renderAnswer = () => {
+    const {isActive} = this.state
+    const {eachItem} = this.props
+    const {answerText} = eachItem
+    let result
+    if (isActive) {
+      result = (
+        <>
+          <hr className="h" />
+          <p>{answerText}</p>
+        </>
+      )
+    }
+    return result
+  }
+
   render() {
     const {isActive} = this.state
     const {eachItem} = this.props
@@ -22,8 +38,8 @@ class FaqItem extends Component {
       ? 'https://assets.ccbp.in/frontend/react-js/faqs-minus-icon-img.png'
       : 'https://assets.ccbp.in/frontend/react-js/faqs-plus-icon-img.png'
 
-    const para = isActive ? answerText : null
-    const hr = isActive ? 'h' : 'hh'
+    // const para = isActive ? answerText : null
+    // const hr = isActive ? 'h' : ''
     const altText = isActive ? 'minus' : 'plus'
 
     return (
@@ -34,12 +50,7 @@ class FaqItem extends Component {
             <img src={img} alt={altText} className="icons" />
           </button>
         </div>
-        <hr className={hr} />
-        <p>{para}</p>
-        {/* <div className="nameTxt-container">
-          <hr className={hr} />
-          <p>{para}</p>
-        </div> */}
+        {isActive ? this.renderAnswer() : null}
       </li>
     )
   }

@@ -1,7 +1,7 @@
 /* Write your code here. */
 .faqs-bg-container {
   background-color: #9aa5b1;
-  height: 120vh;
+  /* height: 120vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
 }
 .faqs-container {
   background-color: #f1f5f8;
-  height: 120vh;
+  /* height: 120vh; */
   display: flex;
   border-radius: 20px;
   flex-direction: column;
@@ -19,6 +19,7 @@
   box-shadow: 0px 4px 16px 0px #bfbfbf;
   outline: none;
   padding: 30px;
+  width: 90%;
 }
 .heading {
   color: #cb8805;

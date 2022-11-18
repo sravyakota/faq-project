@@ -16,9 +16,9 @@
   justify-content: space-between;
   width: 100%;
 }
-.nameTxt-container {
+/* .nameTxt-container {
   width: 100%;
-}
+} */
 .bb {
   cursor: pointer;
   border: 0px;
@@ -26,10 +26,11 @@
 }
 .h {
   width: 100%;
+  border: 1px solid #d7dae6;
 }
-.hh {
+/* .hh {
   display: none;
-}
+} */
 .paraQuestion {
   font-weight: bold;
   font-size: 20px;
